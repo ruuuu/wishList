@@ -124,11 +124,11 @@
                   </div>
             </section>
 
-            <section class="edit edit--profile">
+            <section class="edit edit-profile">
                   <div class="container">
                          <form class="edit__form">
                               <fieldset class="edit__avatar">
-                                    <img class="edit__avatr-image" src="./img/avatar.jpg" alt="аватарка пользователя">
+                                    <img class="edit__avatar-image" src="./img/avatar.jpg" alt="аватарка пользователя">
                                     <div class="edit__avatar-load">
                                           <label for="avatar-load" class="edit___label-avatar">
                                                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,35 +137,97 @@
                                                 Обновить фотографию 
                                           </label>
                                           <input class="edit__input-file edit__input-file--avatar" type="file" accept="image/jpg, image/png"><!--accept гооврит какие файлы можно грузить-->
+                                          <button class="edit__avatar-delete">
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path d="M9.48842 29.6389C9.48842 31.35 10.9027 32.75 12.6313 32.75H25.2027C26.9313 32.75 28.3456 31.35 28.3456 29.6389V10.9722H9.48842V29.6389ZM12.6313 14.0833H25.2027V29.6389H12.6313V14.0833ZM24.417 6.30556L22.8456 4.75H14.9884L13.417 6.30556H7.91699V9.41667H29.917V6.30556H24.417Z" fill="white"/>
+                                                </svg>
+                                                Удалить
+                                          </button>
                                     </div>
                               </fieldset>   
 
-                              <fieldset class="edit__avatar">
-                                    
+
+                              <fieldset class="edit__name">
+                                    <label class="edit__label">
+                                          <span class="edit__label-text">Имя</span>
+                                          <input class="input" type="text" name="name">
+                                    </label>
+
+                                    <label class="edit__label">
+                                          <span class="edit__label-text">Фамилия</span>
+                                          <input class="input" type="text" name="surname">
+                                    </label>
                               </fieldset>  
 
-                              <fieldset class="edit__avatar">
-                                    
+
+                              <fieldset class="edit__birthdate">
+                                    <legend class="edit__label">Дата рождения</legend>
+                                    <label class="edit__label">
+                                          <select class="edit__select" type="text" name="day"></select>
+                                    </label>
+
+                                    <label class="edit__label">
+                                          <select class="edit__select" type="text" name="month"></select>
+                                    </label>
+
+                                    <label class="edit__label">
+                                          <select class="edit__select" type="text" name="year"></select>
+                                    </label>
                               </fieldset>  
 
-                              <fieldset class="edit__avatar">
-                                    
+
+                              <fieldset class="edit__description">
+                                    <label class="edit__label" for="description">Вступительный текст</label>
+                                          <textarea class="edit__description" name="description"></textarea>
                               </fieldset>  
+
+                              <button class="edit__submit-btn">Сохрнаить измеенения</button>
                          </form>     
                   </div>
             </section>
 
             <section class="edit edit--wish">
+                  <div class="container">
+                        <form class="edit__form">
+                              <fieldset class="edit__wish">
+                                    <label class="edit__label">
+                                          <span class="edit__label-text">Описание</span>
+                                          <input class="input" type="text" name="title">
+                                    </label>
 
+                                    <label class="edit__label">
+                                          <span class="edit__label-text">Категория</span>
+                                          <input class="input" type="text" name="category">
+                                    </label>
+
+                                   <div class="edit__wish-price">
+                                          <label class="edit__label">
+                                                <span class="edit__label-text">Цена</span>
+                                                <input class="input" type="text" name="price">
+                                          </label>
+
+                                          <label class="edit__label-select">
+                                                <select class="edit__select edit__select--currency" name="currency"></select>
+                                          </label> 
+                                   </div> 
+
+                                    <label class="edit__label">
+                                          <span class="edit__label-text">Ссылка</span>
+                                          <input class="input" type="text" name="link">
+                                    </label>
+                              </fieldset>  
+
+                              <fieldset class="edit__wish-photo">
+                                    <label class="edit__label-photo">
+                                          <img class="edit__wish-image" src="./img/no-photo.jpg" alt="">
+                                    </label>
+                              </fieldset>   
+
+                              <button class="edit__submit-btn btn">Сохранить изменение</button>
+                              <button class="edit__delete-btn btn">Удалить желание</button>
+                        </form>
+                  </div>
             </section>
-
-            <div class="modal">
-
-            </div>
-
-            <div class="modal">
-                  
-            </div>
       </main>
       
 </body>
