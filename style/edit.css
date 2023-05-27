@@ -1,0 +1,119 @@
+.edit {
+      margin-bottom: 174px;
+     
+}
+
+
+.edit__form {
+}
+
+
+.edit__avatar {
+      display: flex;
+      
+}
+
+
+.edit__avatar-image {
+}
+
+
+.edit__avatar-load {
+}
+
+
+
+.edit_label-avatar {
+}
+
+
+.edit__input-file {
+}
+
+
+.edit__input-file--avatar {
+}
+
+
+.edit__avatar-delete {
+}
+
+
+.edit__name {
+}
+
+
+.edit__label {
+}
+
+
+.edit__label-text {
+}
+
+
+.edit__birthdate {
+}
+
+
+.edit__select {
+}
+
+
+.edit__description {
+}
+
+
+.edit__submit-btn {
+}
+
+
+.edit-profile {
+}
+
+
+
+.edit {
+
+      &__form {
+      }
+
+      &__wish {
+      }
+
+      &__label {
+      }
+
+      &__label-text {
+      }
+
+      &__wish-price {
+      }
+
+      &__label-select {
+      }
+
+      &__select {
+      }
+
+      &__select--currency {
+      }
+
+      &__wish-photo {
+      }
+
+      &__label-photo {
+      }
+
+      &__wish-image {
+      }
+
+      &__submit-btn {
+      }
+
+      &__delete-btn {
+      }
+}
+
+.edit--wish {
+}
+

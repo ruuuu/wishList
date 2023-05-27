@@ -1,0 +1,24 @@
+.steps {
+      display: flex;
+      justify-content: center;
+      gap: 44px; 
+      counter-reset: steps-counter;   /* steps-counter это сами задали свое название счетчика */
+}
+
+
+.steps__item {
+      display: flex; /* чтоюы циферки около текста сделать псевдоэлементами */
+      align-items: center;
+      flex-basis: 243px;
+      gap: 16px; 
+      font-size: 18px;
+      line-height: 21px;
+}
+
+
+.steps__item::before { /* псевдоэлмент - циферка */
+      content: '1';
+      font-size: 92px;
+      color: rgba(255, 255, 255, 0.6);
+
+}

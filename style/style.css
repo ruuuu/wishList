@@ -1,0 +1,118 @@
+/* базовые сили*/
+html{
+      box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+      box-sizing: inherit;
+}
+
+
+body{
+      min-width: 320px;
+      min-height: 100vh;      /* то есть  100% от высоты экрана(то есть весь контент  будет вмешщаться в экран) */
+      font-family: Roboto, sans-serif; /* sans-serif-шрифт без зеасечек */
+      font-weight: 400;
+      background-color: #365ABA;
+      color: #ffffff;
+}
+
+
+img, svg{
+      display: block; /* чтобь убирался нижний отступ у кратини(он по молчанию есть) */
+      max-width: 100%;
+      max-height: 100%; /* чтоб  картинка не выпадала из блока */
+      height: auto;  /* чтоб высота элемента зависела от ширины(если ширину увеличивается/уменьшается то и высота увеличивается/уменьшается) */
+}
+
+
+button{
+      padding: 0;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+      color: inherit;
+}
+
+
+a{
+      text-decoration: none;
+}
+
+
+ul, ol{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+}
+
+
+h1, h2, h3, h4, p{
+      margin: 0;
+}
+
+
+fieldset{
+      margin: 0;
+      padding: 0;
+      border: 0;
+}
+
+
+.container{
+      max-width: 1792px;  /* 1712(ширина контента) + 40(padding)*2 */
+      padding: 0 40px;
+      margin: 0 auto;
+}
+
+
+.body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;      /* 100% от высоты экрана(то есть весь контент будет вмешщаться в экран) */
+}
+
+
+.app{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; /* если будет свободное место, то элемент увеличится(по высоте) */
+}
+
+
+.btn {
+      padding: 10px 20px;
+      font-size: 34px;
+      color: rgba(54, 90, 186, 1);
+      background-color: #FFFFFF;
+      border-radius: 15px;
+}
+
+
+.btn--castling {
+      background-color: rgba(54, 90, 186, 1);
+      color:  #FFFFFF;
+}
+
+
+.hero{
+      display: none;    
+}
+
+.wishList{
+      display: none;    
+}
+
+
+.edit{
+      /* display: none;     */
+}
+
+
+.input {
+      
+}
