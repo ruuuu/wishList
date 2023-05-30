@@ -10,32 +10,56 @@
 
 .edit__avatar {
       display: flex;
-      
+      align-items: center;
+      margin-bottom: 113px;
 }
 
 
 .edit__avatar-image {
+      max-width: 437px;
+      width: 100%;
+      border-radius: 50%;
+      margin-right: 106px;
 }
 
 
 .edit__avatar-load {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 38px;
+
 }
 
 
 
-.edit_label-avatar {
+.edit__label-avatar {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      margin-bottom: 11px;
+      cursor: pointer;
+
 }
 
 
 .edit__input-file {
+      display: none;
 }
 
 
 .edit__input-file--avatar {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
 }
 
 
 .edit__avatar-delete {
+      display: flex;
+      align-items: center;
+      gap: 2px;
 }
 
 
@@ -44,19 +68,59 @@
 
 
 .edit__label {
+      max-width: 686px;
+      font-size: 50px;
 }
 
 
 .edit__label-text {
+      display: block;
+      margin-bottom: 14px;
 }
 
 
+.edit__label--select{
+      position: relative;
+}
+
+
+.edit__label--select::after{ /* псевдоелэмент - стрелочка вниз */
+      content: '';
+      position: absolute;
+
+      display: block;
+      width: 34px;
+      height: 34px;
+
+      right: 0;
+      top: 50%; 
+      transform: translateY(-50%);
+      background-image: url('../img/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; /* заполнит все пространоство */
+      pointer-events: none; /* чтобы при клике на стрлеочку выпадашка рабоатла */
+
+}
+
 .edit__birthdate {
+      margin-bottom: 44px;
 }
 
 
 .edit__select {
+      appearance: none;  /* чтобы втсроеная стрелочка(станлартная) исчезла */
+      padding: 22px 0;
+      padding-left: 32px;
+      padding-right: 16px;
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      font-size: 48px;
+      cursor: pointer;
 }
+
+
+
 
 
 .edit__description {
