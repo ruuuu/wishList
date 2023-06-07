@@ -9,15 +9,44 @@
       align-items: center;
 }
 
-.header__logo {
+
+@media(max-width: 1700px) { /* <1700 */
+
+      .header{
+            padding: 48px 0;
+       }
+
+      .header__container{
+           
+            
+      }
+
+      .header__logo{
+            width: 54px;
+            height: 54px;
+      }
+
 }
 
-.header__nav {
-}
 
-.header__burger {
-}
 
+@media(max-width: 1200px) { /* <1200 */
+
+      .header{
+            padding: 38px 0;
+       }
+
+      .header__container{
+           
+            
+      }
+
+      .header__logo{
+            width: 48px;
+            height: 48px;
+      }
+      
+}
 
 
 

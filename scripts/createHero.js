@@ -20,7 +20,7 @@ export const createHero = () => {
 
 
       const description = createElement('p', {
-            className: 'hero__descriptione',
+            className: 'hero__description',
             innerHTML: 'Никогда не&nbsp; поздно поставить новую цель или обрести новую мечту... '
       });
 

@@ -13,3 +13,21 @@
 .nav__btn:last-child {
       margin-right: 0;
 }
+
+
+
+@media(max-width: 1700px) { /* <1700 */
+
+     
+
+}
+
+
+
+@media(max-width: 1200px) { /* <1200 */
+
+      .nav__btn {
+           margin-right: 18px;
+      }
+
+}

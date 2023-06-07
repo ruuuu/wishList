@@ -223,6 +223,7 @@
 
 
 .edit__wish-photo {
+      position: relative; /*крестик позиционирем относительно этого жлемента*/
       width: 285px;
       height: 285px;
       margin-bottom: 152px; 
