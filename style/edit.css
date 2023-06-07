@@ -64,27 +64,42 @@
 
 
 .edit__name {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 44px;
 }
 
 
 .edit__label {
       max-width: 686px;
-      font-size: 50px;
+}
+
+
+.edit__input {
+      display: block;
+      width: 100%;
+      height: 100px;
+      padding: 22px 32px;
+      font-size: 48px;
+      border-radius: 15px;
+      border: 0;
 }
 
 
 .edit__label-text {
       display: block;
       margin-bottom: 14px;
+      font-size: 50px;
 }
+
 
 
 .edit__label--select{
-      position: relative;
+      position: relative; /* отнсоительно этого элемента позиционируем стрелочку вниз */
 }
 
 
-.edit__label--select::after{ /* псевдоелэмент - стрелочка вниз */
+.edit__label--select::after{ /* псевдоелэмент - стрелочка вниз у выпадающего списка*/
       content: '';
       position: absolute;
 
@@ -100,10 +115,21 @@
       background-position: center;
       background-size: contain; /* заполнит все пространоство */
       pointer-events: none; /* чтобы при клике на стрлеочку выпадашка рабоатла */
+}
+
+
+
+.edit__label--select:focus-within::after{ /* если внутри этого элемента будет фокус */
+      transform: translateY(-50%) rotate(180deg); /* при нажатии на списко, стелочка будет перворачиваться */
+
+
 
 }
 
+
 .edit__birthdate {
+      display: flex;
+      gap: 12px;
       margin-bottom: 44px;
 }
 
@@ -117,13 +143,27 @@
       border-radius: 15px;
       font-size: 48px;
       cursor: pointer;
+      outline: none;
 }
 
 
-
-
-
 .edit__description {
+      
+      font-size: 38px;
+      
+}
+
+
+.edit__description-input{
+      max-width: 1420px;
+      width: 100%;
+      min-height: 250px;
+      margin-bottom: 68px;
+      padding: 35px 32px;
+      border: 3px solid #365ABA;
+      border-radius: 15px;
+      font-size: 38px;
+      resize: none;  /* не изменять размеры */
 }
 
 
@@ -135,48 +175,97 @@
 }
 
 
-
-.edit {
-
-      &__form {
+.edit__form {
       }
 
-      &__wish {
-      }
 
-      &__label {
-      }
-
-      &__label-text {
-      }
-
-      &__wish-price {
-      }
-
-      &__label-select {
-      }
-
-      &__select {
-      }
-
-      &__select--currency {
-      }
-
-      &__wish-photo {
-      }
-
-      &__label-photo {
-      }
-
-      &__wish-image {
-      }
-
-      &__submit-btn {
-      }
-
-      &__delete-btn {
-      }
+.edit__wish {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 44px 36px;
+      margin-bottom: 44px;
 }
+
+
+.edit__label {
+      }
+
+
+.edit__label-text {
+      }
+
+
+.edit__wish-price {
+      display: flex;
+      gap: 36px;
+      align-items: flex-end;
+}
+
+
+.edit__label--price{
+     flex-basis: 50%;
+     flex-grow: 0;
+     flex-shrink: 1;
+}
+
+
+.edit__label-select {
+      }
+
+
+.edit__select {
+      }
+
+
+.edit__select--currency {
+      width: 100%;
+}
+
+
+.edit__wish-photo {
+      width: 285px;
+      height: 285px;
+      margin-bottom: 152px; 
+}
+
+
+.edit__label-photo {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+
+      /* position: absolute;
+      top: 8px;
+      right: 8px; */   
+}
+
+.edit__wish-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 15px;
+}
+
+
+.edit__wish-delete{
+    
+
+}
+
+
+.edit__submit-btn {
+      margin-right: 22px;
+}
+
+
+.edit__submit-btn:last-child {
+      margin-right: 0;
+}
+
+.edit__delete-btn {
+}
+
 
 .edit--wish {
 }
