@@ -2,7 +2,7 @@
       display: flex;
       justify-content: center;
       gap: 44px; 
-      counter-reset: steps-counter;   /* steps-counter это сами задали свое название счетчика */
+      counter-reset: steps-counter;   /* steps-counter это сами задали название счетчика */
 }
 
 
@@ -17,8 +17,10 @@
 
 
 .steps__item::before { /* псевдоэлмент - циферка */
-      content: '1';
+      content: counter(steps-counter);    /* steps-counter - счетчик используем */
+      counter-increment: steps-counter;   /* увеличиваем счетчик */
       font-size: 92px;
       color: rgba(255, 255, 255, 0.6);
+      margin-right: 16px;
 
 }

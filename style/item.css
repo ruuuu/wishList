@@ -21,13 +21,23 @@
 
 .item__title {
       margin-bottom: 6px;
-      
+      text-align: center;
 }
 
 
 .item__price {
       flex-grow: 1;
       margin-bottom: 10px;
+}
+
+
+
+@media(max-width: 1200px) { /* <1200 */
+
+      .item__image{
+            margin-bottom: 40px;
+      }
+      
 }
 
 

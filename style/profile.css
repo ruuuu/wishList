@@ -1,8 +1,7 @@
 .profile {
       display: flex;
       gap: 196px;
-      align-items: center;
-      
+      align-items: center;  
 }
 
 
@@ -24,8 +23,7 @@
 .profile__fullname {
       margin-bottom: 12px;
       font-size: 50px;
-      font-weight: 400;
-      
+      font-weight: 400;  
 }
 
 
@@ -40,4 +38,38 @@
       align-items: center;
       gap: 7px;  
       font-size: 32px;
+}
+
+
+@media(max-width: 1200px) { /* <1200 */
+
+      .profile__avatar {
+            max-width: 466px;
+            margin-right: 34px;
+      }
+      
+      
+      .profile__content {
+            padding-bottom: 145px;
+      }
+      
+      
+      
+      
+      .profile__birthday {
+            font-size: 32px;
+            margin-bottom: 12px;
+      }
+      
+      
+      .profile__edit {
+            display: flex;
+            align-items: center;
+            gap: 7px;  
+            font-size: 32px;
+      }
+      
+      
+      
+
 }
