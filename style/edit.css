@@ -91,7 +91,7 @@
 
 
 .edit__label--select{
-      position: relative; /* отнсоительно этого элемента позиционируем стрелочку вниз */
+      position: relative; /* отнсоительно этого элемента позиционируем стрелочку вниз у выпадащего спсика*/
 }
 
 
@@ -212,7 +212,6 @@
     position: absolute;
     top: 8px;
     right: 8px;      
-
 }
 
 
@@ -259,6 +258,14 @@
 
       .edit__wish{
             grid-template-columns: 1fr;
+      }
+
+      .edit__label{
+            max-width: 694px;
+      }
+
+      .edit__submit-btn {
+            margin-right: 18px;
       }
 
 }

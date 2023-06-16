@@ -1,9 +1,11 @@
 // отрисовка меню:
 import { createElement } from "./helper.js";
+import { createBurgerMenu } from "./createBurgerMenu.js";
+
 
 
 const nav = document.querySelector('.nav');
-//const burger = createBurgerMenu(nav);
+createBurgerMenu(nav, 'nav--active');  // бургер дял мобилок
 
 
 export const renderNavigation = ()=> {

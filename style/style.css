@@ -109,7 +109,6 @@ fieldset{
             font-size: 28px;
             
       }
-
 }
 
 
@@ -124,5 +123,12 @@ fieldset{
             font-size: 24px;
             
       }
+}
 
+
+@media(max-width: 992px) { /* <992 */
+
+      .container{
+            padding: 0 34px;
+      }
 }
