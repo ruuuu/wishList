@@ -2,6 +2,8 @@
 import { createElement } from "./helper.js";
 import { createBurgerMenu } from "./createBurgerMenu.js";
 import { API_URL } from "./const.js";
+import { renderModal } from "./renderModal.js";
+
 
 
 const nav = document.querySelector('.nav');
@@ -18,7 +20,8 @@ export const renderNavigation = ()=> {
 
 
       btnSignUp.addEventListener('click', () => {
-            renderModal({                       // создание модалки
+             // вызов создания модалки:
+            renderModal({                      
                   title: 'Регистрация',
                   description: 'введите ваши данные дя регистрации в WishList',
                   btnSubmit: 'Зарегистрироваться',
